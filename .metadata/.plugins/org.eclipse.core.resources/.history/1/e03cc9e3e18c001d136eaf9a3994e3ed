@@ -1,0 +1,8 @@
+package Demospring;
+
+public class Yogacoach {
+	public static String yoga() {
+		return "20 min straching ";
+	}
+
+}

@@ -1,0 +1,8 @@
+package Demospring;
+
+public class Yogacoach implements Coach {
+	public static String getDailyWorkout() {
+		return "20 min straching ";
+	}
+
+}

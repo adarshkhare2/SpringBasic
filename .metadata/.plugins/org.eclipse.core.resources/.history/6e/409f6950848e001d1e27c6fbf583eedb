@@ -1,0 +1,14 @@
+package Demospring;
+
+public class Trackcoach implements Coach {
+
+	public String getDailyWorkout() {
+		
+		return "Run a hard 5k";
+	}
+	public int add() {
+		return 2;
+	}
+
+
+}

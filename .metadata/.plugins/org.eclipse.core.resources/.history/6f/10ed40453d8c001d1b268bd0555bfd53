@@ -1,0 +1,22 @@
+package Demospring;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class HelloSpringApp {
+
+	public static void main(String[] args) {
+
+		//load the spring configuration file
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext();
+		
+		//Retrieve the bean from container 
+		Coach theCoach= (Coach) context.getBean("myCoach",Coach.class);
+		
+		//use the method
+		System.out.println(theCoach.getDailyWorkout());
+		
+		//close context
+		context.close();
+	}
+
+}

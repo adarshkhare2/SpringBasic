@@ -1,0 +1,19 @@
+package Demospring;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class SetterDemoApp {
+
+	public static void main(String[] args) {
+		//load spring config file
+		ClassPathXmlApplicationContext context= new ClassPathXmlApplicationContext("applicationContext.xml") ;		
+		//retrive the bean file
+		CricketCoach thecoach3= context.getBean("myCoach3",CricketCoach.class);
+		//call the method
+		System.out.println(thecoach.getDailyFortune());
+		
+		//close context
+		context.close();
+	}
+
+}

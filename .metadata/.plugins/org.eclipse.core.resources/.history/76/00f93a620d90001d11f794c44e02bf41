@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-4.1.xsd">
+
+	<bean id="myFortune" class="Demospring.HappyFortuneService">
+	</bean>
+
+
+	<!-- bean define -->
+	<bean id="myCoach" class="Demospring.Trackcoach">
+	<constructor-arg ref="myFortune"></constructor-arg>
+	</bean>
+	<bean id="myCoach1" class="Demospring.Baseballcoach">
+		<!-- We are using my Fortune id here in constructor-arg and we have define bean on top because 
+			we have used that method in Baseballcoach class -->
+		<constructor-arg ref="myFortune"></constructor-arg>
+
+	</bean>
+	<bean id="myCoach2" class="Demospring.Yogacoach">
+	</bean>
+
+</beans>

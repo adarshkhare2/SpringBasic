@@ -1,0 +1,12 @@
+package com.Spapp1;
+
+public class Student {
+//Dependency in primitive
+	private int rollno;
+	private float persentage;
+	
+// Dependence in String
+	private String name;
+	
+
+}

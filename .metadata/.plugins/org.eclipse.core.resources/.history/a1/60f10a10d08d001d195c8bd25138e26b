@@ -1,0 +1,8 @@
+package com.Spapp1;
+
+public class SubtractionBean {
+	private int num1,num2;
+	
+	
+
+}

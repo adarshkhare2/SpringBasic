@@ -1,0 +1,12 @@
+package Demospring;
+
+public class MyApp {
+
+	public static void main(String[] args) {
+	
+		Baseballcoach coach= new Baseballcoach();
+		
+		System.out.println(coach.getDailyWorkout());
+	}
+
+}

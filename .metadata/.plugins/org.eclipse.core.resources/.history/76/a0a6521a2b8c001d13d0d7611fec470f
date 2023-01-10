@@ -1,0 +1,11 @@
+package Demospring;
+
+public class HelloSpringApp {
+
+	public static void main(String[] args) {
+
+		//load the spring configuration file
+		ClassPastXmlappliationContext context = new ClassPastXmlappliationContext("applicationContext.xml");
+	}
+
+}

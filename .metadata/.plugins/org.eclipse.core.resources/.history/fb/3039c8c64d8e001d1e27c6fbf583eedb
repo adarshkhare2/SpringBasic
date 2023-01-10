@@ -1,0 +1,38 @@
+package com.Spapp1;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.FileSystemResource;
+import org.springframework.core.io.Resource;
+
+public class App {
+	public static void main(String[] args) {
+		System.out.println("AdditionStart.....!");
+		// To load config file
+		// 1.Resource resource = new FileSystemResource("applicationContext.xml");
+		// 2.Resource resource = new ClassPathResource("applicationContext.xml");
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+
+		//BeanFactory factory= new XmlBeanFactory(resource);
+		AdditionBean additionBean = context.getBean("obj1", AdditionBean.class);
+		SubtractionBean subtractionBean= context.getBean("obj2",SubtractionBean.class);
+		
+		Multipcation multipcation=context.getBean("obj3",Multipcation.class);
+		Multipcation multipcation1=context.getBean("obj3",Multipcation.class);
+
+		String display = multipcation.display();
+		System.out.println(display);
+
+		System.out.println(additionBean.doSum());
+		System.out.println(subtractionBean.doSum());
+		
+		
+
+		
+
+		//System.out.println(context);
+
+	}
+}
