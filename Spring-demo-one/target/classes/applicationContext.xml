@@ -25,8 +25,12 @@
 	<bean id="myCoach3" class="Demospring.CricketCoach">
 		<!-- Setter for passing value -->
 		<property name="fortuneService" ref="myFortune"></property>
-		<property name="email" value="adarshkhare2503@gmail.com"></property>
-		<property name="team" value="Sunrisers HYD"></property>
+		
+		<property name="email" value="${foo.email}"></property>
+		<property name="team" value="${foo.team}"></property>
 	</bean>
+	
+	<!-- load the properties (using this also we can insert value )-->
+	<context:property-placeholder location="sport.properties"/>
 
 </beans>

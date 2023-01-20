@@ -3,6 +3,7 @@
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
 			<item value="C:\Users\tech\Desktop\SpringWorkspace"/>
+			<item value="C:\Users\tech\Desktop\SpringWorkspace\Spring-demo-one"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -26,19 +27,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.Spapp1"/>
-			<item value="spring.com.Spring_demo_one"/>
-			<item value="spring_demo_one.lib"/>
+			<item value="com.Spring_demo_annotations"/>
 		</list>
 		<list key="groupId">
-			<item value=".com"/>
-			<item value="spring.com"/>
-			<item value="spring-demo-one"/>
+			<item value="com"/>
 		</list>
 		<list key="artifactId">
-			<item value="Spapp1"/>
-			<item value="Spring-demo-one"/>
-			<item value="lib"/>
+			<item value="Spring-demo-annotations"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

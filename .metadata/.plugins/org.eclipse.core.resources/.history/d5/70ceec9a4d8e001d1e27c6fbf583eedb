@@ -1,9 +1,0 @@
-package com.Spapp1;
-
-public class Multipcation {
-
-	
-	public void display() {
-		System.out.println("Hello");
-	}
-}

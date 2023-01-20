@@ -21,5 +21,12 @@ public class Trackcoach implements Coach {
 		// TODO Auto-generated method stub
 		return "Just do it "+fortuneService.getFortune();
 	}
+	
+	public void doMyCreateBean() {
+		System.out.println("This method call when bean get Create.");
+	}
+	public void doMyDistroyBean() {
+		System.out.println("This method call when bean get Destroy");
+	}
 
 }

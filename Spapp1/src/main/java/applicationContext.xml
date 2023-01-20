@@ -21,14 +21,14 @@
 	<bean id="obj2" class="com.Spapp1.SubtractionBean">
 		<!-- <constructor-arg> <value>30</value> </constructor-arg> <constructor-arg><value>10</value> 
 			</constructor-arg> -->
-
 		<!-- <constructor-arg value="30" type="int" /> <constructor-arg value="20" 
 			type="int"></constructor-arg> -->
 
 		<constructor-arg index="0" value="50" />
 		<constructor-arg index="1" value="10" />
-
 	</bean>
+
+
 	<!-- outter bean -->
 	<bean id="myStudent" class="com.Spapp1.Student">
 		<property name="rollno" value="1954" />
@@ -36,16 +36,24 @@
 		<property name="name" value="Adarsh" />
 		<property name="dateOfBrithBean" ref="myDOB" />
 
+		<!-- This use for serach for inner bean out side of this config file -->
+		<!-- <property name="dateOfBrithBean"> <ref parent="myDOB" /> </property> -->
+
+		<!-- This use for serach for inner bean inside&out side of this config 
+			file -->
+		<!-- <property name="dateOfBrithBean"> <ref bean="myDOB" /> </property> -->
+
 	</bean>
+
+
 	<!-- inner bean -->
 	<!-- this is inner bean class Student depend on DOB -->
 	<bean id="myDOB" class="com.Spapp1.DateOfBrithBean">
 		<property name="day" value="25" />
 		<property name="month" value="March" />
 		<property name="year" value="2000" />
-
-
 	</bean>
+
 
 	<bean class="com.Spapp1.IpsEngCollage" id="IpsEng">
 		<property name="studentName">
@@ -81,10 +89,6 @@
 
 			</props>
 		</property>
-
-
-
-
 	</bean>
 
 

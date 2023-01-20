@@ -1,9 +1,0 @@
-package com.Spapp1;
-
-public class Student {
-
-	
-	public String display() {
-		return "Hello";
-	}
-}

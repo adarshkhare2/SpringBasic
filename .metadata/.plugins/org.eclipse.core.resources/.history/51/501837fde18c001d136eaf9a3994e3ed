@@ -1,8 +1,0 @@
-package Demospring;
-
-public class Yogacoach implements Coach {
-	public static String yoga() {
-		return "20 min straching ";
-	}
-
-}

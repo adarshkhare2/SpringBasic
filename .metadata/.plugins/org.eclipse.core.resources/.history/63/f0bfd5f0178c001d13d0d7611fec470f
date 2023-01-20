@@ -1,9 +1,0 @@
-package Demospring;
-
-public class Baseballcoach {
-	
-	public String getworkout() {
-		return "Spend 30 min for batting practish";
-	}
-
-}
