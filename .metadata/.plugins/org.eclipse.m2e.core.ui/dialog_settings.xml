@@ -27,13 +27,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.Spring_demo_annotations"/>
+			<item value="SpringMVC.SpringMVC"/>
 		</list>
 		<list key="groupId">
-			<item value="com"/>
+			<item value="SpringMVC"/>
 		</list>
 		<list key="artifactId">
-			<item value="Spring-demo-annotations"/>
+			<item value="SpringMVC"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
